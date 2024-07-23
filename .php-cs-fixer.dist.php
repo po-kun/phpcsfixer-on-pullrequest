@@ -38,7 +38,7 @@ return (new PhpCsFixer\Config())
         // 'new_with_braces' => true,//newを用いて生成したインスタンスには後方に丸括弧を必要とする
         // 'no_blank_lines_after_class_opening' => true,
         // 'no_blank_lines_after_phpdoc' => true,
-        'no_blank_lines_before_namespace' => true,//ネームスペースの後ろに改行を入れない
+        // 'no_blank_lines_before_namespace' => true,//ネームスペースの後ろに改行を入れない
         // 'no_empty_comment' => true,//空のコメントやphpdoc、ステートメントを削除する
         // 'no_empty_phpdoc' => true,
         // 'no_empty_statement' => true,
