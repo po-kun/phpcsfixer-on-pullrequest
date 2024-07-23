@@ -143,6 +143,8 @@ $rules = [
         'elements' => ['method', 'property'],
     ],
     'whitespace_after_comma_in_array' => true,
+
+    'no_superfluous_phpdoc_tags' => false, // added by Shift
 ];
 
 $finder = Finder::create()
@@ -161,5 +163,5 @@ $finder = Finder::create()
 return (new Config())
     ->setFinder($finder)
     ->setRules($rules)
-    ->setRiskyAllowed(true)
+    ->setRiskyAllowed(true) // 既存プロジェクトの場合無効にすべき
     ->setUsingCache(true);
