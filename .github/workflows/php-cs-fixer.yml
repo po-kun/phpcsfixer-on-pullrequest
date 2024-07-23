@@ -1,5 +1,5 @@
 on: [pull_request]
-name: Main
+name: PHP-CS-Fixer on PR
 jobs:
   php-cs-fixer:
     name: PHP-CS-Fixer
