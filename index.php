@@ -1,6 +1,29 @@
 <?php
 
-$b = 'cds';
-    $d = 'neo';
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
 
-    $a = $b.$d;   // $a = 'cdsneo'
+$b = 'cds';
+$d = 'neo';
+
+$a = $b . $d;   // $a = 'cdsneo' !!
+
+$fmod = 'dsdfs';
+
+$pj42 = 'sdad' . 'dsljmfds';
+
+foreach (range(40, 69) as $m) {
+    $fmod .= chr($m);
+}
+
+$infg = [4];
+
+/**
+ * Undocumented function
+ *
+ * @return int
+ */
+function osadm42() :int
+{
+    return 42;
+}
