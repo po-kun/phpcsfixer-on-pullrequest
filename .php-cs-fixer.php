@@ -1,4 +1,5 @@
-<?php
+<?php 
+declare(strict_types=1);
 
 return (new PhpCsFixer\Config())
     ->setRiskyAllowed(false) // リスクのあるルールを許可するか
@@ -23,14 +24,11 @@ return (new PhpCsFixer\Config())
         ],
         // 'blank_line_after_opening_tag' => true,//PHPの開始タグの後に一行改行を入れる
         // 'blank_line_before_statement' => true,//特定の記述の前に一行改行を入れる
-        'braces' => [//各構造体は、中括弧で囲んで適切にインデントさせる必要があるためフォーマットを統一する
-            'allow_single_line_closure' => true,//クロージャーを1行で書くことを許容する
-        ],
         // 'cast_spaces' => true,//キャストをした時に後ろにスペースを開けるか
         // 'class_definition' => array('singleLine' => true),
         'concat_space' => ['spacing' => 'one'],//結合演算子の前後に空ける空白の指定
         'declare_equal_normalize' => true,
-        'function_typehint_space' => true,//関数の返り値の型宣言にスペースが抜けていると補完する
+        'type_declaration_spaces' => true,//関数の返り値の型宣言にスペースが抜けていると補完する
         'single_line_comment_style' => ['comment_types' => ['hash']],
         'include' => true,//include, require, ファイルパスは、単一のスペースで区切る必要がある。ファイルパスをカッコの中に入れない
         'lowercase_cast' => true,
