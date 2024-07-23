@@ -1,10 +1,9 @@
 <?php
 
-use PhpCsFixer\Config;
-use PhpCsFixer\Finder;
-
 declare(strict_types=1);
 
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
 
 $rules = [
     'array_indentation' => true,
@@ -146,20 +145,13 @@ $rules = [
     'whitespace_after_comma_in_array' => true,
 ];
 
-
 $finder = Finder::create()
     ->in([
-        __DIR__ ,
-        __DIR__ . '/app',
-        __DIR__ . '/config',
-        __DIR__ . '/database',
-        __DIR__ . '/resources',
-        __DIR__ . '/routes',
-        __DIR__ . '/tests',
+        __DIR__,
     ])
     ->exclude([
-         __DIR__ . '/tools',
-         __DIR__ . '/vendor',
+        __DIR__.'/tools',
+        __DIR__.'/vendor',
     ])
     ->name('*.php')
     ->notName('*.blade.php')
