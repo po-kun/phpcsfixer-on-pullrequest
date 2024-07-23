@@ -7,8 +7,8 @@ $b = 'cds';
 $d = 'neo';
 
 $a = $b.$d;   // $a = 'cdsneo' !!
-
-$fmod = 'dsdfs';
+  
+$fmod =         'dsdfs';
 
 $pj42 = 'sdad'.'dsljmfds';
 
